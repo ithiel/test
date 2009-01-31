@@ -1,0 +1,12 @@
+<h1>Editing bottle</h1>
+
+<% form_for(@bottle) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @bottle %> |
+<%= link_to 'Back', bottles_path %>

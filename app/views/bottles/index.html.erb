@@ -1,0 +1,18 @@
+<h1>Listing bottles</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% for bottle in @bottles %>
+  <tr>
+    <td><%= link_to 'Show', bottle %></td>
+    <td><%= link_to 'Edit', edit_bottle_path(bottle) %></td>
+    <td><%= link_to 'Destroy', bottle, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New bottle', new_bottle_path %>
